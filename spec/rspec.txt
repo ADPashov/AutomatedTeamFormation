@@ -1,0 +1,79 @@
+
+MBPSOTeamFormation::MBPSO
+  Intialisation
+[32m    Initialised successfully with  a valid data set[0m
+[32m    Initialised successfully with different sets of optional paramteres[0m
+[32m    Instantiates with full set of optional parameters[0m
+[32m    Throws exceptions for invalid input[0m
+  Running the algorithm
+[32m    Return the result in the format of Array of Arrays[0m
+[32m    Exports statistics data into a .csv file with the expected amount of rows and columns[0m
+[32m    Exports data only if requested[0m
+[32m    Successfully allocates students if number of students is not a multiple of the teams size[0m
+[32m    Succesfully allocated students to teams of various sizes[0m
+
+MBPSOTeamFormation::MVH
+  Detecting missing values
+[32m    Returning true if no values are missing[0m
+[32m    Raise exception if missing values are found and the user doesn't want them handled[0m
+  Calculating needed statistics for the data set
+[32m    Calculates correctly the most frequent gender[0m
+[32m    Calculates correctly the most frequent ethnicity[0m
+[32m    Calculates correctly the mean of the grades[0m
+[32m    Calculated correctly standard deviation[0m
+  Replacing the missing values
+[32m    Replacing missing gender[0m
+[32m    Replacing missing ethnicity[0m
+[32m    Replacing missing grade[0m
+
+MBPSOTeamFormation::Neighbourhood
+  Initialisation
+[32m    Succesfully initialising and generating particles list of the correct size[0m
+[32m    All particles in the list are successfully created[0m
+    Particles list manipulation
+[32m      Successfully adding particles to the neighbourhood[0m
+[32m      Successfully maintaining particles list size when removing particles[0m
+[32m      Returning particle only if thera are present particles in the list before removing[0m
+[32m      Returning nil only if trying to remove particle from empty list[0m
+    Value update
+[32m      Accurately updating inertia[0m
+[32m      Successfully iterate particles and accurately update local best fitness[0m
+
+MBPSOTeamFormation::Particle
+  Initialising Particle
+[32m    Initial Position generated[0m
+[32m    Every student is assigned to excatly one team after initial position generation[0m
+[32m    Every team is composed of exactly 4 students after initial position generation[0m
+  Calculating particle parameters
+[32m    Accurately calculating position[0m
+[32m    Accurately updating personal best fitness and position[0m
+[32m    Maintaining valid position for a number of iterations[0m
+
+MBPSOTeamFormation::Validation
+  Validate Numbers
+[32m    Integer validator accepts only valid positive integers[0m
+[32m    Non-negative number accepts only valid integers and floats[0m
+[32m    Works only with 'pos_int' and 'nn_num' arguments[0m
+  Validate Survaival Number
+[32m    Accepts only integers between 2 and the  number of students[0m
+  Validate Control Parameters
+[32m    Accepts only valid 3-valued arrays with floats in [0:1][0m
+[32m    Works only with 'local' and 'personal' arguments[0m
+  Validate Skill Table
+[32m    Accepts only hashes that cover the whole [0:100] Integer range and are not ambiguous[0m
+[32m    Accepts only integer keys[0m
+  Validate Boolean
+[32m    Accepts only logical/bolean values[0m
+  Validate Data Set
+[32m    Accepts only CSV::Table formats[0m
+[32m    Accepts data sets only with valid headers and valid number of columns[0m
+[32m    Declines data sets with duplicating IDs[0m
+[32m    Declines data sets with gender values different from '-1', '0' and '1'[0m
+[32m    Declines data sets with ethnicity values different from the Integers in the [-1:4] range[0m
+[32m    Declines data sets with gender values different from '-1', '0' and 1[0m
+  Validate Forbidden Pair
+[32m    Accepts instances of Array or CSV::Table with two values per row[0m
+
+Finished in 29.87 seconds (files took 0.87915 seconds to load)
+[32m48 examples, 0 failures[0m
+
